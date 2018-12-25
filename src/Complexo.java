@@ -3,7 +3,7 @@ public class Complexo {
 	
 	private double parteReal;
 	private double parteImaginaria;
-	private final static String i = "i";
+	private final static double i = Math.sqrt(-1);
 	
 	public Complexo() {
 		this(1, 1);
@@ -31,8 +31,14 @@ public class Complexo {
 		this.parteImaginaria = parteImaginaria;
 	}
 
-	public String getI() {
+	public double getI() {
 		return i;
 	}
+	
+	public static double somaComplexos(Complexo a, Complexo b) {
+		return (a.getParteReal() + b.getParteReal()) + (a.getParteImaginaria() + b.getParteImaginaria()) * Complexo.i;
+	}
+	
+	
 
 }
