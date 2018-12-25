@@ -36,13 +36,21 @@ public class Complexo {
 	}
 	
 	public static double somaComplexos(Complexo a, Complexo b) {
+		
 		return (a.getParteReal() + b.getParteReal()) + (a.getParteImaginaria() + b.getParteImaginaria()) * Complexo.I;
+		
 	}
 	
 	public static double subtraiComplexos(Complexo a, Complexo b) {
+		
 		return (a.getParteReal() - b.getParteReal()) + (a.getParteImaginaria() - b.getParteImaginaria()) * Complexo.I;
+		
 	}
 	
-	
+	public void exibeComplexoMetodo() {
+		
+		System.out.println("Complexo("+getParteReal()+", "+getParteImaginaria()+")");
+		
+	}
 
 }
