@@ -51,8 +51,13 @@ public class Complexo {
 	
 	public void exibeComplexoMetodo() {
 		
+		System.out.println("Complexo(Parte Real, Parte Imaginária)");
 		System.out.println("Complexo("+getParteReal()+", "+getParteImaginaria()+")");
 		
+	}
+	
+	public String toString() {
+		return String.format("Parte Real: %f\tParte Imaginária: %f", getParteReal(), getParteImaginaria());
 	}
 
 }
