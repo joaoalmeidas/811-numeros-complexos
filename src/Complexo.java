@@ -57,7 +57,7 @@ public class Complexo {
 	}
 	
 	public String toString() {
-		return String.format("Parte Real: %f\tParte Imaginária: %f", getParteReal(), getParteImaginaria());
+		return String.format("Parte Real: %.1f\tParte Imaginária: %.1f", getParteReal(), getParteImaginaria());
 	}
 
 }
